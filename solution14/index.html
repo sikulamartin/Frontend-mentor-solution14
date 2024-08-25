@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Frontend quiz app</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="icons">
+        <div class="imgSunDark" id="imgSunDark"><img src="assets/images/icon-sun-dark.svg"></div>
+        <div class="imgSunLight" id="imgSunLight"><img src="assets/images/icon-sun-light.svg"></div>
+        <input type="checkbox" class="theme-checkbox" id="theme-input">
+        <div class="imgMoonDark" id="imgMoonDark"><img src="assets/images/icon-moon-dark.svg"></div>
+        <div class="imgMoonLight" id="imgMoonLight"><img src="assets/images/icon-moon-light.svg"></div>  
+      </div>
+    </header>
+    <div class="mainContent">
+      <div class="wrapperLeft">
+        <h1 class="heading" id="heading">
+          <span class="h1Light" id="h1-light">Welcome to the</span>Frontend Quiz!
+        </h1>
+        <div class="subHeading" id="sub-heading">
+          pick a subject to get started.
+        </div>
+      </div>
+      <div class="wrapperRight">
+        <a href="HTML.html"><button class="btnOption" id="btnOption">
+            <div class="btnImgWrapperHTML"><img src="assets/images/icon-html.svg"></div><span
+              class="imgText" id="imgText">HTML</span>
+          </button></a>
+        <a href="CSS.html"><button class="btnOption" id="btnOption1">
+          <div class="btnImgWrapperCSS"><img src="assets/images/icon-css.svg" width="40px" height="40px"></div><span
+            class="imgText" id="imgText1">CSS</span>
+        </button></a>
+         <a href="JavaScript.html"><button class="btnOption" id="btnOption2">
+         <div class="btnImgWrapperJS"><img src="assets/images/icon-js.svg"></div><span
+            class="imgText" id="imgText2">JavaScript</span>
+        </button></a>
+        <a href="Accessibility.html"><button class="btnOption" id="btnOption3">
+          <div class="btnImgWrapperAccessibility"><img src="assets/images/icon-accessibility.svg"></div><span
+            class="imgText" id="imgText3">Accessibility</span>
+        </button></a>
+      </div>
+    </div>
+  </div>
+  <div class="iconsContainer" style="display: none;">
+    <div class="imgSunDark" id="imgSunDark1"><img src="assets/images/icon-sun-dark.svg"></div>
+    <div class="imgSunLight" id="imgSunLight1"><img src="assets/images/icon-sun-light.svg"></div>
+    <input type="checkbox" class="theme-checkbox" id="theme-input1">
+    <div class="imgMoonDark" id="imgMoonDark1"><img src="assets/images/icon-moon-dark.svg"></div>
+    <div class="imgMoonLight" id="imgMoonLight1"><img src="assets/images/icon-moon-light.svg"></div>  
+</div>
+  <script src="darkmode.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

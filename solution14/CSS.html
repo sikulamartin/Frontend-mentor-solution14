@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Frontend Mentor | Frontend quiz app</title>
+</head>
+<body>
+    <div class="Quiz" id="quizContainer">
+        <div class="container">
+            <header>
+                <div class="icons">
+                    <div class="buttonWrapper">
+                        <div class="btnImgWrapperCSS">
+                            <img src="assets/images/icon-css.svg">
+                        </div>
+                        <span class="imgText">CSS</span>
+                    </div>
+                    <div class="iconsContainer">
+                        <div class="imgSunDark" id="imgSunDark"><img src="assets/images/icon-sun-dark.svg"></div>
+                        <div class="imgSunLight" id="imgSunLight"><img src="assets/images/icon-sun-light.svg"></div>
+                        <input type="checkbox" class="theme-checkbox" id="theme-input">
+                        <div class="imgMoonDark" id="imgMoonDark"><img src="assets/images/icon-moon-dark.svg"></div>
+                        <div class="imgMoonLight" id="imgMoonLight"><img src="assets/images/icon-moon-light.svg"></div>  
+                    </div>
+                </div>
+            </header>
+            <div class="mainContent">
+                <div class="wrapperLeft">
+                    <div class="questionWrapper">
+                        <div class="questionNumber">
+                            Question <span id="questionNumber"></span> of 10
+                        </div>
+                        <div class="Question">
+                            <span id="question"></span>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="wrapperRight">
+                    <div class="buttonContainer">
+                        <button class="buttonAnswer" id="button-answer1">
+                            <div class="answer" id="answer1">A</div><span id="answer01"></span>
+                            <img src="assets/images/icon-correct.svg" class="imgCorrect" id="correct"><img
+                                src="assets/images/icon-error.svg" class="imgWrong" id="wrong">
+                        </button>
+                        <button class="buttonAnswer" id="button-answer2">
+                            <div class="answer" id="answer2">B</div><span id="answer02"></span>
+                            <img src="assets/images/icon-correct.svg" class="imgCorrect" id="correct"><img
+                                src="assets/images/icon-error.svg" class="imgWrong" id="wrong">
+                        </button>
+                        <button class="buttonAnswer" id="button-answer3">
+                            <div class="answer" id="answer3">C</div><span id="answer03"></span>
+                            <img src="assets/images/icon-correct.svg" class="imgCorrect" id="correct"><img
+                                src="assets/images/icon-error.svg" class="imgWrong" id="wrong">
+                        </button>
+                        <button class="buttonAnswer" id="button-answer4">
+                            <div class="answer" id="answer4">D</div><span id="answer04"></span>
+                            <img src="assets/images/icon-correct.svg" class="imgCorrect" id="correct"><img
+                                src="assets/images/icon-error.svg" class="imgWrong" id="wrong">
+                        </button>
+                    </div>
+                    <button class="btnSubmit" id="btn-submit">Submit Answer</button>
+                    <div class="invalidAnswer" id="invalid-answer">
+                        <img src="assets/images/icon-error.svg" style="margin-right: 8px;">Please select an answer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Score" id="score-container">
+        <div class="container">
+            <header>
+                <div class="icons">
+                    <div class="buttonWrapper">
+                        <div class="btnImgWrapperCSS">
+                            <img src="assets/images/icon-css.svg">
+                        </div>
+                        <span class="imgText">CSS</span>
+                    </div>
+                    <div class="iconsContainer">
+                        <div class="imgSunDark" id="imgSunDark1"><img src="assets/images/icon-sun-dark.svg"></div>
+                        <div class="imgSunLight" id="imgSunLight1"><img src="assets/images/icon-sun-light.svg"></div>
+                        <input type="checkbox" class="theme-checkbox" id="theme-input1">
+                        <div class="imgMoonDark" id="imgMoonDark1"><img src="assets/images/icon-moon-dark.svg"></div>
+                        <div class="imgMoonLight" id="imgMoonLight1"><img src="assets/images/icon-moon-light.svg"></div>  
+                    </div>
+                </div>
+            </header>
+            <div class="mainContent">
+                <div class="wrapperLeft">
+                    <h1 class="heading">
+                        <span class="h1Light">Quiz completed</span>You scored...
+                    </h1>
+                </div>
+                <div class="wrapper1">
+                <div class="wrapperRight wrapperRightBackground">
+                    <div class="wrapper">
+                        <div class="btnImgWrapperCSS">
+                            <img src="assets/images/icon-css.svg">
+                        </div>
+                        <span class="imgText">CSS</span>
+                    </div>
+                    <div class="scoreContainer">
+                        <span class="scored" id="scored"></span><br>out of 10
+                    </div>
+                </div>
+                <button class="btnSubmit" id="play-again">Play Again</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="darkmode.js"></script>
+    <script src="css.js"></script>
+</body>
+</html>
